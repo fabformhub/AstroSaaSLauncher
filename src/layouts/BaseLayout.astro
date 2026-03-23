@@ -1,0 +1,37 @@
+---
+import "../styles/global.css";
+import NavBar from "../components/NavBar.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AstroSaaSLauncher — Launch a real SaaS in days, not months</title>
+  </head>
+
+  <body class="min-h-screen bg-[#FAFAFC] text-[#0F172A] antialiased">
+    <div class="relative overflow-hidden">
+
+      <!-- Premium subtle background accents -->
+      <div class="pointer-events-none absolute inset-0 -z-10">
+        <!-- Soft colour pop accents -->
+        <div class="absolute top-[-80px] right-[-80px] w-72 h-72 rounded-full opacity-[0.18] blur-[120px]"
+             style="background: #A259FF;"></div>
+
+        <div class="absolute bottom-[-100px] left-[-60px] w-80 h-80 rounded-full opacity-[0.18] blur-[120px]"
+             style="background: #3C82F6;"></div>
+
+        <div class="absolute top-[40%] left-[50%] w-64 h-64 rounded-full opacity-[0.12] blur-[100px] -translate-x-1/2"
+             style="background: #FF5F7E;"></div>
+      </div>
+
+      <NavBar />
+
+      <main class="mt-6">
+        <slot />
+      </main>
+    </div>
+  </body>
+</html>
+

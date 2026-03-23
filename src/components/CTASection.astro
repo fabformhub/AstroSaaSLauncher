@@ -1,0 +1,58 @@
+<section class="relative py-40 bg-white overflow-hidden">
+
+  <!-- Background Scribble Burst -->
+  <svg class="absolute bottom-0 left-0 w-[700px] opacity-40 pointer-events-none -z-10"
+       viewBox="0 0 700 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 200 C150 40, 300 360, 450 120 S650 260, 690 80"
+          stroke="#3C82F6" stroke-width="7" stroke-linecap="round"
+          class="animate-scribble-cta" />
+  </svg>
+
+  <div class="mx-auto max-w-5xl px-6 text-left">
+
+    <!-- Brutalist Heading -->
+    <h2 class="text-6xl md:text-8xl font-black tracking-tight leading-[0.9] text-[#0F172A] mb-10">
+      Ready to build<br />
+      <span class="inline-block -rotate-1 px-2 bg-[#A259FF] text-white">
+        something real?
+      </span>
+    </h2>
+
+    <!-- Subheadline -->
+    <p class="text-2xl md:text-3xl font-semibold text-[#475569] max-w-3xl leading-snug mb-12">
+      Launch a premium, expressive SaaS with a visual identity that actually stands out.
+    </p>
+
+    <!-- CTA Buttons -->
+    <div class="flex flex-wrap gap-8">
+
+      <!-- Primary CTA -->
+      <a href="/signup"
+         class="px-14 py-6 text-2xl font-bold text-white rounded-xl shadow-[0_0_25px_rgba(162,89,255,0.4)] transition-all duration-300"
+         style="background: linear-gradient(135deg, #A259FF, #3C82F6);">
+        Get Started
+      </a>
+
+      <!-- Secondary CTA -->
+      <a href="/demo"
+         class="px-14 py-6 text-2xl font-bold border-4 border-[#0F172A] rounded-xl hover:bg-[#0F172A] hover:text-white transition-all duration-300 shadow-[10px_10px_0_#0F172A] hover:shadow-[14px_14px_0_#FF5F7E]">
+        Live Demo
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+  @keyframes scribble-cta {
+    0% { stroke-dashoffset: 0; transform: translateX(0px); }
+    50% { stroke-dashoffset: -140; transform: translateX(14px); }
+    100% { stroke-dashoffset: 0; transform: translateX(0px); }
+  }
+
+  .animate-scribble-cta {
+    animation: scribble-cta 8s ease-in-out infinite;
+  }
+</style>
+

@@ -1,0 +1,98 @@
+<footer class="relative py-32 bg-white border-t-4 border-[#0F172A] overflow-hidden">
+
+  <!-- Background Scribble -->
+  <svg class="absolute top-0 right-0 w-[600px] opacity-40 pointer-events-none -z-10"
+       viewBox="0 0 600 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 150 C120 20, 260 260, 400 80 S580 200, 590 40"
+          stroke="#FF5F7E" stroke-width="6" stroke-linecap="round"
+          class="animate-scribble-footer" />
+  </svg>
+
+  <div class="mx-auto max-w-6xl px-6">
+
+    <!-- Top Row -->
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-20 gap-12">
+
+      <!-- Brand -->
+      <div>
+        <h3 class="text-4xl font-black tracking-tight text-[#0F172A] mb-4">
+          AstroSaaSLauncher
+        </h3>
+        <p class="text-lg text-[#475569] max-w-sm leading-relaxed">
+          A premium, expressive, chaotic‑controlled SaaS starter kit with a visual identity that actually stands out.
+        </p>
+      </div>
+
+      <!-- Links -->
+      <div class="grid grid-cols-2 gap-12 text-lg font-semibold">
+
+        <div class="space-y-4">
+          <a href="/features" class="footer-link">Features</a>
+          <a href="/pricing" class="footer-link">Pricing</a>
+          <a href="/docs" class="footer-link">Docs</a>
+        </div>
+
+        <div class="space-y-4">
+          <a href="/contact" class="footer-link">Contact</a>
+          <a href="/privacy" class="footer-link">Privacy</a>
+          <a href="/terms" class="footer-link">Terms</a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="w-full h-2 bg-[#0F172A] mb-12"></div>
+
+    <!-- Bottom Row -->
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+
+      <p class="text-lg font-semibold text-[#0F172A]">
+        © 2024 AstroSaaSLauncher — Built with chaos, control, and taste.
+      </p>
+
+      <!-- Socials -->
+      <div class="flex gap-8 text-lg font-bold">
+        <a href="#" class="footer-link">Twitter</a>
+        <a href="#" class="footer-link">GitHub</a>
+        <a href="#" class="footer-link">YouTube</a>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+<style>
+  @keyframes scribble-footer {
+    0% { stroke-dashoffset: 0; transform: translateX(0px); }
+    50% { stroke-dashoffset: -120; transform: translateX(-12px); }
+    100% { stroke-dashoffset: 0; transform: translateX(0px); }
+  }
+
+  .animate-scribble-footer {
+    animation: scribble-footer 8s ease-in-out infinite;
+  }
+
+  .footer-link {
+    position: relative;
+    color: #0F172A;
+    padding-bottom: 2px;
+  }
+
+  .footer-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, #A259FF, #3C82F6);
+    transition: width 0.3s ease;
+  }
+
+  .footer-link:hover::after {
+    width: 100%;
+  }
+</style>
+
