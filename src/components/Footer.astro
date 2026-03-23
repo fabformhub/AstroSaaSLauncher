@@ -1,3 +1,7 @@
+---
+import Button from "../components/ui/Button.astro";
+---
+
 <footer class="relative py-32 bg-white border-t-4 border-[#0F172A] overflow-hidden">
 
   <!-- Background Scribble -->
@@ -51,11 +55,11 @@
         © 2024 AstroSaaSLauncher — Built with chaos, control, and taste.
       </p>
 
-      <!-- Socials -->
-      <div class="flex gap-8 text-lg font-bold">
-        <a href="#" class="footer-link">Twitter</a>
-        <a href="#" class="footer-link">GitHub</a>
-        <a href="#" class="footer-link">YouTube</a>
+      <!-- Socials (Optional: using Button) -->
+      <div class="flex gap-6">
+        <Button href="#" variant="outline" size="md">Twitter</Button>
+        <Button href="#" variant="outline" size="md">GitHub</Button>
+        <Button href="#" variant="outline" size="md">YouTube</Button>
       </div>
 
     </div>

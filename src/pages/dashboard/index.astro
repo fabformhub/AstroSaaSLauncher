@@ -1,0 +1,68 @@
+---
+import DashboardShell from "../../components/layout/DashboardShell.astro";
+import Button from "../../components/ui/Button.astro";
+
+const title = "Overview";
+---
+
+<DashboardShell {title}>
+
+  <!-- Scribble Accent -->
+  <svg class="absolute top-10 right-10 w-40 opacity-40 pointer-events-none"
+       viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M5 30 C40 5, 80 55, 120 20 S180 40, 195 10"
+          stroke="#FF5F7E" stroke-width="4" stroke-linecap="round"
+          class="animate-scribble-overview" />
+  </svg>
+
+  <div class="grid md:grid-cols-3 gap-12">
+
+    <!-- Card 1 -->
+    <div class="p-10 border-4 border-[#0F172A] rounded-xl bg-white shadow-[10px_10px_0_#0F172A]">
+      <h3 class="text-3xl font-black mb-4">Forms</h3>
+      <p class="text-lg text-[#475569] mb-8">
+        Manage your forms, submissions, and integrations.
+      </p>
+      <Button href="/dashboard/forms" variant="outline" size="md">
+        View Forms
+      </Button>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="p-10 border-4 border-[#0F172A] rounded-xl bg-white shadow-[10px_10px_0_#0F172A]">
+      <h3 class="text-3xl font-black mb-4">Analytics</h3>
+      <p class="text-lg text-[#475569] mb-8">
+        Track performance and user activity.
+      </p>
+      <Button href="/dashboard/analytics" variant="outline" size="md">
+        View Analytics
+      </Button>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="p-10 border-4 border-[#0F172A] rounded-xl bg-white shadow-[10px_10px_0_#0F172A]">
+      <h3 class="text-3xl font-black mb-4">Settings</h3>
+      <p class="text-lg text-[#475569] mb-8">
+        Update your account and project configuration.
+      </p>
+      <Button href="/dashboard/settings" variant="outline" size="md">
+        Settings
+      </Button>
+    </div>
+
+  </div>
+
+</DashboardShell>
+
+<style>
+  @keyframes scribble-overview {
+    0% { stroke-dashoffset: 0; transform: translateY(0px); }
+    50% { stroke-dashoffset: -80; transform: translateY(-8px); }
+    100% { stroke-dashoffset: 0; transform: translateY(0px); }
+  }
+
+  .animate-scribble-overview {
+    animation: scribble-overview 6s ease-in-out infinite;
+  }
+</style>
+

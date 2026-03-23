@@ -1,0 +1,52 @@
+---
+import Button from "../components/ui/Button.astro";
+---
+
+<section class="min-h-screen flex items-center justify-center bg-white relative overflow-hidden">
+
+  <!-- Background Scribble -->
+  <svg class="absolute top-0 right-0 w-[700px] opacity-40 pointer-events-none -z-10"
+       viewBox="0 0 700 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 200 C150 40, 300 360, 450 120 S650 260, 690 80"
+          stroke="#3C82F6" stroke-width="7" stroke-linecap="round"
+          class="animate-scribble-auth" />
+  </svg>
+
+  <div class="w-full max-w-md p-12 border-4 border-[#0F172A] rounded-xl bg-white shadow-[12px_12px_0_#0F172A]">
+
+    <h1 class="text-5xl font-black text-[#0F172A] mb-6">
+      Verify your email
+    </h1>
+
+    <p class="text-lg text-[#475569] font-semibold mb-10 leading-relaxed">
+      We’ve sent a verification link to your inbox.  
+      Click the link to activate your account.
+    </p>
+
+    <div class="space-y-8">
+
+      <Button variant="primary" size="lg">
+        Resend Email
+      </Button>
+
+      <a href="/login" class="underline text-[#0F172A] text-lg font-semibold block">
+        Back to login
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+  @keyframes scribble-auth {
+    0% { stroke-dashoffset: 0; transform: translateX(0px); }
+    50% { stroke-dashoffset: -140; transform: translateX(14px); }
+    100% { stroke-dashoffset: 0; transform: translateX(0px); }
+  }
+
+  .animate-scribble-auth {
+    animation: scribble-auth 8s ease-in-out infinite;
+  }
+</style>
+

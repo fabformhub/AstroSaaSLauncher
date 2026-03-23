@@ -1,50 +1,26 @@
+---
+import Button from "../components/ui/Button.astro";
+---
+
 <section class="relative overflow-hidden py-32 bg-white">
 
-  <!-- Scribble Waves (Controlled Chaos) -->
   <svg class="absolute inset-0 w-full h-full pointer-events-none -z-10"
        viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-    <!-- Layer 1: Smooth Bezier Scribble -->
-    <path d="
-      M -200 300 
-      C 200 150, 600 450, 1000 250 
-      S 1600 350, 1800 200"
-      stroke="#A259FF"
-      stroke-width="6"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="animate-scribble-1 opacity-40"
-    />
-
-    <!-- Layer 2: Offset Scribble -->
-    <path d="
-      M -150 500 
-      C 250 350, 650 650, 1050 450 
-      S 1650 550, 1850 400"
-      stroke="#3C82F6"
-      stroke-width="5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="animate-scribble-2 opacity-30"
-    />
-
-    <!-- Layer 3: Accent Scribble -->
-    <path d="
-      M -100 700 
-      C 300 550, 700 850, 1100 650 
-      S 1700 750, 1900 600"
-      stroke="#FF5F7E"
-      stroke-width="4"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="animate-scribble-3 opacity-25"
-    />
-
+    <path d="M -200 300 C 200 150, 600 450, 1000 250 S 1600 350, 1800 200"
+          stroke="#A259FF" stroke-width="6"
+          stroke-linecap="round" stroke-linejoin="round"
+          class="animate-scribble-1 opacity-40" />
+    <path d="M -150 500 C 250 350, 650 650, 1050 450 S 1650 550, 1850 400"
+          stroke="#3C82F6" stroke-width="5"
+          stroke-linecap="round" stroke-linejoin="round"
+          class="animate-scribble-2 opacity-30" />
+    <path d="M -100 700 C 300 550, 700 850, 1100 650 S 1700 750, 1900 600"
+          stroke="#FF5F7E" stroke-width="4"
+          stroke-linecap="round" stroke-linejoin="round"
+          class="animate-scribble-3 opacity-25" />
   </svg>
 
   <div class="relative mx-auto max-w-5xl px-6 text-left">
-
-    <!-- Brutalist Heading -->
     <h1 class="text-6xl md:text-8xl font-black tracking-tight leading-[0.9] text-[#0F172A]">
       Build something<br />
       <span class="inline-block -rotate-1 px-2 bg-[#FF5F7E] text-white">
@@ -52,25 +28,19 @@
       </span>
     </h1>
 
-    <!-- Subheadline -->
     <p class="mt-8 text-xl max-w-xl text-[#475569] leading-relaxed">
       A premium, expressive, chaotic‑controlled SaaS starter kit with a visual identity that actually stands out.
     </p>
 
-    <!-- CTA Buttons -->
     <div class="mt-10 flex gap-6">
-      <a href="/signup"
-         class="px-10 py-4 text-lg font-semibold text-white rounded-xl shadow-[0_0_20px_rgba(162,89,255,0.4)] transition-all duration-300"
-         style="background: linear-gradient(135deg, #A259FF, #3C82F6);">
+      <Button href="/signup" variant="primary" size="lg">
         Get Started
-      </a>
+      </Button>
 
-      <a href="/demo"
-         class="px-10 py-4 text-lg font-semibold border-2 border-[#0F172A] rounded-xl hover:bg-[#0F172A] hover:text-white transition-all duration-300">
+      <Button href="/demo" variant="outline" size="lg">
         Live Demo
-      </a>
+      </Button>
     </div>
-
   </div>
 </section>
 
@@ -80,27 +50,19 @@
     50% { stroke-dashoffset: -80; transform: translateY(-12px); }
     100% { stroke-dashoffset: 0; transform: translateY(0px); }
   }
-
   @keyframes scribble-2 {
     0% { stroke-dashoffset: 0; transform: translateY(0px); }
     50% { stroke-dashoffset: -120; transform: translateY(10px); }
     100% { stroke-dashoffset: 0; transform: translateY(0px); }
   }
-
   @keyframes scribble-3 {
     0% { stroke-dashoffset: 0; transform: translateY(0px); }
     50% { stroke-dashoffset: -60; transform: translateY(-8px); }
     100% { stroke-dashoffset: 0; transform: translateY(0px); }
   }
 
-  .animate-scribble-1 {
-    animation: scribble-1 6s ease-in-out infinite;
-  }
-  .animate-scribble-2 {
-    animation: scribble-2 7s ease-in-out infinite;
-  }
-  .animate-scribble-3 {
-    animation: scribble-3 5s ease-in-out infinite;
-  }
+  .animate-scribble-1 { animation: scribble-1 6s ease-in-out infinite; }
+  .animate-scribble-2 { animation: scribble-2 7s ease-in-out infinite; }
+  .animate-scribble-3 { animation: scribble-3 5s ease-in-out infinite; }
 </style>
 

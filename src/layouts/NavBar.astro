@@ -1,0 +1,26 @@
+---
+import Button from "../components/ui/Button.astro";
+---
+
+<nav class="w-full border-b-4 border-[#0F172A] bg-white px-8 py-6 flex justify-between items-center">
+
+  <!-- Logo -->
+  <a href="/" class="text-3xl font-black tracking-tight">
+    AstroSaaS
+  </a>
+
+  <!-- Nav Items (now using Button variant="nav") -->
+  <div class="hidden md:flex items-center gap-6">
+    <Button href="/pricing" variant="nav" size="md">Pricing</Button>
+    <Button href="/docs" variant="nav" size="md">Docs</Button>
+    <Button href="/contact" variant="nav" size="md">Contact</Button>
+  </div>
+
+  <!-- CTA Buttons -->
+  <div class="flex items-center gap-6">
+    <Button href="/login" variant="outline" size="md">Login</Button>
+    <Button href="/signup" variant="primary" size="md">Get Started</Button>
+  </div>
+
+</nav>
+

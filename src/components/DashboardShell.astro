@@ -1,0 +1,108 @@
+---
+import Button from "../components/ui/Button.astro";
+const { title = "Dashboard" } = Astro.props;
+---
+
+<div class="flex h-screen bg-white text-[#0F172A] overflow-hidden">
+
+  <!-- Sidebar -->
+  <aside class="relative w-72 border-r-4 border-[#0F172A] p-8 flex flex-col gap-10">
+
+    <!-- Scribble Accent -->
+    <svg class="absolute -top-4 left-4 w-40 opacity-50 pointer-events-none"
+         viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M5 30 C40 5, 80 55, 120 20 S180 40, 195 10"
+            stroke="#A259FF" stroke-width="4" stroke-linecap="round"
+            class="animate-scribble-sidebar" />
+    </svg>
+
+    <!-- Logo -->
+    <div class="flex items-center gap-3">
+      <div class="w-8 h-8 bg-[#0F172A] rounded-sm"></div>
+      <span class="text-2xl font-black tracking-tight">AstroSaaS</span>
+    </div>
+
+    <!-- Nav Links -->
+    <nav class="flex flex-col gap-6 text-xl font-bold">
+      <a href="/dashboard" class="dash-link">Overview</a>
+      <a href="/dashboard/forms" class="dash-link">Forms</a>
+      <a href="/dashboard/analytics" class="dash-link">Analytics</a>
+      <a href="/dashboard/settings" class="dash-link">Settings</a>
+    </nav>
+
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 flex flex-col">
+
+    <!-- Topbar -->
+    <header class="relative border-b-4 border-[#0F172A] p-6 flex justify-between items-center">
+
+      <!-- Scribble Accent -->
+      <svg class="absolute -bottom-4 right-4 w-40 opacity-50 pointer-events-none"
+           viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 30 C40 5, 80 55, 120 20 S180 40, 195 10"
+              stroke="#3C82F6" stroke-width="4" stroke-linecap="round"
+              class="animate-scribble-topbar" />
+      </svg>
+
+      <h1 class="text-4xl font-black tracking-tight">{{ title }}</h1>
+
+      <div class="flex items-center gap-6">
+        <Button href="/dashboard/account" variant="outline" size="md">
+          Account
+        </Button>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="flex-1 overflow-y-auto p-10">
+      <slot />
+    </div>
+
+  </main>
+
+</div>
+
+<style>
+  @keyframes scribble-sidebar {
+    0% { stroke-dashoffset: 0; transform: translateY(0px); }
+    50% { stroke-dashoffset: -60; transform: translateY(-6px); }
+    100% { stroke-dashoffset: 0; transform: translateY(0px); }
+  }
+
+  @keyframes scribble-topbar {
+    0% { stroke-dashoffset: 0; transform: translateX(0px); }
+    50% { stroke-dashoffset: -60; transform: translateX(6px); }
+    100% { stroke-dashoffset: 0; transform: translateX(0px); }
+  }
+
+  .animate-scribble-sidebar {
+    animation: scribble-sidebar 6s ease-in-out infinite;
+  }
+
+  .animate-scribble-topbar {
+    animation: scribble-topbar 6s ease-in-out infinite;
+  }
+
+  .dash-link {
+    position: relative;
+    padding-bottom: 4px;
+  }
+
+  .dash-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, #A259FF, #3C82F6);
+    transition: width 0.3s ease;
+  }
+
+  .dash-link:hover::after {
+    width: 100%;
+  }
+</style>
+
