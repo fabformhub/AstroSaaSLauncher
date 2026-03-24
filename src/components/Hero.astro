@@ -4,6 +4,7 @@ import Button from "../components/ui/Button.astro";
 
 <section class="relative overflow-hidden py-32 bg-white">
 
+  <!-- Background Scribbles -->
   <svg class="absolute inset-0 w-full h-full pointer-events-none -z-10"
        viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M -200 300 C 200 150, 600 450, 1000 250 S 1600 350, 1800 200"
@@ -21,26 +22,33 @@ import Button from "../components/ui/Button.astro";
   </svg>
 
   <div class="relative mx-auto max-w-5xl px-6 text-left">
+
+    <!-- Brutalist Headline -->
     <h1 class="text-6xl md:text-8xl font-black tracking-tight leading-[0.9] text-[#0F172A]">
-      Build something<br />
+      Launch your SaaS.<br />
       <span class="inline-block -rotate-1 px-2 bg-[#FF5F7E] text-white">
-        real.
+        Not a theme.
       </span>
     </h1>
 
-    <p class="mt-8 text-xl max-w-xl text-[#475569] leading-relaxed">
-      A premium, expressive, chaotic‑controlled SaaS starter kit with a visual identity that actually stands out.
+    <!-- Subheadline -->
+    <p class="mt-8 text-xl max-w-2xl text-[#475569] leading-relaxed font-semibold">
+      Astro SaaS Launcher is a fully‑working SaaS starter application — not a UI kit or design theme.  
+      It ships with real boilerplate code every SaaS needs: authentication, database models, storage, realtime, billing, dashboard, protected routes, and a modern UI.  
+      Built on Astro, Svelte, and Supabase, it runs out of the box and saves weeks or even months of development time.
     </p>
 
+    <!-- CTA Buttons -->
     <div class="mt-10 flex gap-6">
-      <Button href="/signup" variant="primary" size="lg">
-        Get Started
+      <Button href="/pricing" variant="primary" size="lg">
+        View Pricing
       </Button>
 
       <Button href="/demo" variant="outline" size="lg">
         Live Demo
       </Button>
     </div>
+
   </div>
 </section>
 

@@ -1,0 +1,224 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const stripeLink = "https://buy.stripe.com/bJe6oG4ea1codbO2FDa7C0e";
+---
+
+<BaseLayout title="Pricing – Astro SaaS Launcher">
+
+  <!-- PAGE WRAPPER -->
+  <section class="py-40 bg-white">
+
+    <!-- Heading -->
+    <div class="mx-auto max-w-5xl px-6 text-left mb-20">
+      <h1 class="text-6xl md:text-8xl font-black tracking-tight leading-[0.9] text-[#0F172A] mb-10">
+        One price.<br />
+        <span class="inline-block -rotate-1 px-3 bg-[#FF5F7E] text-white">
+          Everything included.
+        </span>
+      </h1>
+
+      <p class="text-2xl md:text-3xl font-semibold text-[#475569] max-w-3xl leading-snug">
+        A fully‑working SaaS starter application — not a theme, not a UI kit.  
+        Astro SaaS Launcher ships with Supabase fully integrated, real boilerplate code, and a production‑ready architecture that runs out of the box.
+      </p>
+    </div>
+
+    <!-- Pricing Card -->
+    <div class="mx-auto max-w-4xl px-6 mb-32">
+      <div class="border-4 border-black bg-white shadow-[10px_10px_0_0_#000] p-12">
+
+        <h2 class="text-4xl font-black text-[#0F172A] mb-4">Starter License</h2>
+        <p class="text-6xl font-black text-[#0F172A] mb-6">£99</p>
+
+        <p class="text-xl text-[#475569] font-medium mb-10 max-w-xl">
+          Pay once. Own the code. Launch your SaaS faster with a complete, fully‑wired Astro + Svelte + Supabase foundation.
+        </p>
+
+        <ul class="space-y-4 text-xl font-medium text-[#1E293B] mb-12">
+
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 mt-1 text-black" viewBox="0 0 16 16">
+              <path d="M6.5 11.5L3 8l1.4-1.4L6.5 8.7l5.1-5.1L13 5l-6.5 6.5z" fill="currentColor"/>
+            </svg>
+            Full Supabase integration — Auth, DB, Storage, Realtime, RLS
+          </li>
+
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 mt-1 text-black" viewBox="0 0 16 16">
+              <path d="M6.5 11.5L3 8l1.4-1.4L6.5 8.7l5.1-5.1L13 5l-6.5 6.5z" fill="currentColor"/>
+            </svg>
+            Real boilerplate code — not placeholders or mockups
+          </li>
+
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 mt-1 text-black" viewBox="0 0 16 16">
+              <path d="M6.5 11.5L3 8l1.4-1.4L6.5 8.7l5.1-5.1L13 5l-6.5 6.5z" fill="currentColor"/>
+            </svg>
+            Dashboard shell + reusable UI components
+          </li>
+
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 mt-1 text-black" viewBox="0 0 16 16">
+              <path d="M6.5 11.5L3 8l1.4-1.4L6.5 8.7l5.1-5.1L13 5l-6.5 6.5z" fill="currentColor"/>
+            </svg>
+            Protected routes + auth‑aware pages
+          </li>
+
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 mt-1 text-black" viewBox="0 0 16 16">
+              <path d="M6.5 11.5L3 8l1.4-1.4L6.5 8.7l5.1-5.1L13 5l-6.5 6.5z" fill="currentColor"/>
+            </svg>
+            Stripe checkout already wired in
+          </li>
+
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 mt-1 text-black" viewBox="0 0 16 16">
+              <path d="M6.5 11.5L3 8l1.4-1.4L6.5 8.7l5.1-5.1L13 5l-6.5 6.5z" fill="currentColor"/>
+            </svg>
+            Lifetime updates included
+          </li>
+
+        </ul>
+
+        <a href={stripeLink}
+           class="inline-block text-center w-full py-4 text-2xl font-black bg-black text-white border-4 border-black shadow-[6px_6px_0_0_#000] hover:bg-white hover:text-black transition">
+          Buy Now – £99
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Guarantee -->
+    <div class="mx-auto max-w-4xl px-6 mb-32">
+      <h2 class="text-5xl font-black text-[#0F172A] mb-6">
+        Zero risk.<br />
+        <span class="inline-block -rotate-1 px-3 bg-[#FF5F7E] text-white">14‑day guarantee.</span>
+      </h2>
+
+      <p class="text-2xl text-[#475569] font-semibold max-w-3xl leading-snug mb-10">
+        Try Astro SaaS Launcher for 14 days.  
+        If it doesn’t save you time or help you launch faster, you get a full refund — no questions asked.
+      </p>
+
+      <div class="border-4 border-black bg-white shadow-[10px_10px_0_0_#000] p-10">
+        <div class="flex items-start gap-4 text-left">
+          <svg class="w-8 h-8 mt-1 text-black" viewBox="0 0 16 16">
+            <path d="M6.5 11.5L3 8l1.4-1.4L6.5 8.7l5.1-5.1L13 5l-6.5 6.5z" fill="currentColor"/>
+          </svg>
+          <p class="text-xl font-medium text-[#1E293B] leading-relaxed">
+            You get a fully‑working SaaS starter with Supabase Auth, Database, Storage, Realtime, RLS, billing, dashboard, and protected routes — all wired together and ready to use.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Build vs Buy -->
+    <div class="mx-auto max-w-5xl px-6 mb-40">
+      <h2 class="text-6xl font-black text-[#0F172A] mb-16">
+        Build from scratch?<br />
+        <span class="inline-block -rotate-1 px-3 bg-[#A259FF] text-white">Or buy and launch faster?</span>
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-10">
+
+        <!-- Build -->
+        <div class="border-4 border-black bg-white shadow-[10px_10px_0_0_#000] p-10">
+          <h3 class="text-4xl font-black mb-6">Build It Yourself</h3>
+          <ul class="space-y-5 text-xl font-medium text-[#1E293B]">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 mt-1 text-red-600" viewBox="0 0 16 16">
+                <path d="M2 2l12 12M14 2L2 14" stroke="currentColor" stroke-width="3"/>
+              </svg>
+              40–120 hours wiring Supabase Auth, DB, Storage, Realtime, RLS
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 mt-1 text-red-600" viewBox="0 0 16 16">
+                <path d="M2 2l12 12M14 2L2 14" stroke="currentColor" stroke-width="3"/>
+              </svg>
+              Build dashboard + UI components from scratch
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 mt-1 text-red-600" viewBox="0 0 16 16">
+                <path d="M2 2l12 12M14 2L2 14" stroke="currentColor" stroke-width="3"/>
+              </svg>
+              Implement protected routes manually
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 mt-1 text-red-600" viewBox="0 0 16 16">
+                <path d="M2 2l12 12M14 2L2 14" stroke="currentColor" stroke-width="3"/>
+              </svg>
+              Integrate Stripe checkout + webhooks
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 mt-1 text-red-600" viewBox="0 0 16 16">
+                <path d="M2 2l12 12M14 2L2 14" stroke="currentColor" stroke-width="3"/>
+              </svg>
+              £1,500–£6,000 in dev time
+            </li>
+          </ul>
+        </div>
+
+        <!-- Buy -->
+        <div class="border-4 border-black bg-[#0F172A] text-white shadow-[10px_10px_0_0_#000] p-10">
+          <h3 class="text-4xl font-black mb-6">Buy Astro SaaS Launcher</h3>
+          <ul class="space-y-5 text-xl font-medium">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 mt-1 text-green-400" viewBox="0 0 16 16">
+                <path d="M6.5 11.5L3 8l1.4-1.4L6.5 8.7l5.1-5.1L13 5l-6.5 6.5z" fill="currentColor"/>
+              </svg>
+              Supabase fully integrated
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 mt-1 text-green-400" viewBox="0 0 16 16">
+                <path d="M6.5 11.5L3 8l1.4-1.4L6.5 8.7l5.1-5.1L13 5l-6.5 6.5z" fill="currentColor"/>
+              </svg>
+              Dashboard + UI components included
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 mt-1 text-green-400" viewBox="0 0 16 16">
+                <path d="M6.5 11.5L3 8l1.4-1.4L6.5 8.7l5.1-5.1L13 5l-6.5 6.5z" fill="currentColor"/>
+              </svg>
+              Protected routes ready to use
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 mt-1 text-green-400" viewBox="0 0 16 16">
+                <path d="M6.5 11.5L3 8l1.4-1.4L6.5 8.7l5.1-5.1L13 5l-6.5 6.5z" fill="currentColor"/>
+              </svg>
+              Stripe checkout already wired in
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 mt-1 text-green-400" viewBox="0 0 16 16">
+                <path d="M6.5 11.5L3 8l1.4-1.4L6.5 8.7l5.1-5.1L13 5l-6.5 6.5z" fill="currentColor"/>
+              </svg>
+              One‑time payment: <span class="font-black ml-1">£99</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Final CTA -->
+    <div class="mx-auto max-w-5xl px-6 text-center py-32 bg-[#FF5F7E] border-t-4 border-black">
+      <h2 class="text-6xl md:text-7xl font-black text-[#0F172A] mb-10">
+        Ready to launch faster?<br />
+        <span class="inline-block -rotate-1 px-3 bg-[#0F172A] text-white">
+          Start with a real SaaS foundation.
+        </span>
+      </h2>
+
+      <a href={stripeLink}
+        class="inline-block px-20 py-6 text-4xl font-black bg-[#0F172A] text-white border-4 border-black shadow-[10px_10px_0_0_#000] hover:bg-white hover:text-[#0F172A] transition">
+        Buy Now – £99
+      </a>
+
+      <p class="mt-8 text-xl font-medium text-[#0F172A]/80">
+        One‑time payment. Lifetime updates. 14‑day guarantee.
+      </p>
+    </div>
+
+  </section>
+
+</BaseLayout>
+

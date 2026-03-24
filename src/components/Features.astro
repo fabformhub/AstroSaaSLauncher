@@ -1,114 +1,45 @@
-<section class="relative py-32 bg-white overflow-hidden">
-
-  <!-- Background Scribble Accent -->
-  <svg class="absolute top-0 right-0 w-[500px] opacity-40 pointer-events-none -z-10"
-       viewBox="0 0 600 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M10 150 C120 20, 260 260, 400 80 S580 200, 590 40"
-          stroke="#3C82F6" stroke-width="6" stroke-linecap="round"
-          class="animate-scribble-features" />
-  </svg>
-
-  <div class="mx-auto max-w-6xl px-6">
+<section class="py-32 bg-white">
+  <div class="mx-auto max-w-5xl px-6">
 
     <!-- Section Heading -->
-    <h2 class="text-5xl md:text-7xl font-black tracking-tight leading-[0.9] text-[#0F172A] mb-20">
-      Features that<br />
-      <span class="inline-block -rotate-1 px-2 bg-[#A259FF] text-white">
-        actually matter.
+    <h2 class="text-5xl md:text-6xl font-black tracking-tight leading-[0.9] text-[#0F172A] mb-12">
+      A real SaaS foundation.<br />
+      <span class="inline-block -rotate-1 px-2 bg-[#FF5F7E] text-white">
+        Not a theme.
       </span>
     </h2>
 
-    <!-- Feature Grid -->
-    <div class="grid md:grid-cols-2 gap-16">
+    <!-- Section Intro -->
+    <p class="text-2xl text-[#475569] font-semibold max-w-3xl leading-snug mb-16">
+      Astro SaaS Launcher gives you a fully‑working SaaS starter application with real boilerplate code — 
+      authentication, database models, storage, realtime, billing, dashboard, protected routes, and a modern UI.  
+      Built on Astro, Svelte, and Supabase, it runs out of the box and saves weeks or even months of development time.
+    </p>
 
-      <!-- Feature Card -->
-      <div class="relative p-10 border-4 border-[#0F172A] rounded-xl bg-white shadow-[8px_8px_0_#0F172A] hover:shadow-[12px_12px_0_#A259FF] transition-all duration-300">
-        
-        <!-- Scribble Accent -->
-        <svg class="absolute -top-6 -left-4 w-32 opacity-60 pointer-events-none"
-             viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5 30 C40 5, 80 55, 120 20 S180 40, 195 10"
-                stroke="#FF5F7E" stroke-width="4" stroke-linecap="round"
-                class="animate-scribble-card" />
+    <!-- Features Grid -->
+    <div class="grid md:grid-cols-2 gap-12 text-xl text-[#1E293B] font-medium">
+
+      <!-- Feature -->
+      <div class="flex items-start gap-4">
+        <svg class="w-6 h-6 mt-1 text-black" viewBox="0 0 16 16">
+          <path d="M6.5 11.5L3 8l1.4-1.4L6.5 8.7l5.1-5.1L13 5l-6.5 6.5z" fill="currentColor"/>
         </svg>
-
-        <h3 class="text-3xl font-black mb-4">Instant Setup</h3>
-        <p class="text-lg text-[#475569] leading-relaxed">
-          Go from zero to a fully branded, expressive SaaS experience in minutes — not weeks.
-        </p>
+        <span>A fully‑working SaaS starter — not a UI kit or design theme</span>
       </div>
 
-      <!-- Feature Card -->
-      <div class="relative p-10 border-4 border-[#0F172A] rounded-xl bg-white shadow-[8px_8px_0_#0F172A] hover:shadow-[12px_12px_0_#3C82F6] transition-all duration-300">
-
-        <svg class="absolute -top-6 -left-4 w-32 opacity-60 pointer-events-none"
-             viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5 30 C40 5, 80 55, 120 20 S180 40, 195 10"
-                stroke="#A259FF" stroke-width="4" stroke-linecap="round"
-                class="animate-scribble-card" />
+      <div class="flex items-start gap-4">
+        <svg class="w-6 h-6 mt-1 text-black" viewBox="0 0 16 16">
+          <path d="M6.5 11.5L3 8l1.4-1.4L6.5 8.7l5.1-5.1L13 5l-6.5 6.5z" fill="currentColor"/>
         </svg>
-
-        <h3 class="text-3xl font-black mb-4">Premium UI System</h3>
-        <p class="text-lg text-[#475569] leading-relaxed">
-          A handcrafted brutalist‑tech design language with scribble motion and bold identity.
-        </p>
+        <span>Built on Astro + Svelte for a modern, lightweight architecture</span>
       </div>
 
-      <!-- Feature Card -->
-      <div class="relative p-10 border-4 border-[#0F172A] rounded-xl bg-white shadow-[8px_8px_0_#0F172A] hover:shadow-[12px_12px_0_#FF5F7E] transition-all duration-300">
-
-        <svg class="absolute -top-6 -left-4 w-32 opacity-60 pointer-events-none"
-             viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5 30 C40 5, 80 55, 120 20 S180 40, 195 10"
-                stroke="#3CF6C7" stroke-width="4" stroke-linecap="round"
-                class="animate-scribble-card" />
+      <div class="flex items-start gap-4">
+        <svg class="w-6 h-6 mt-1 text-black" viewBox="0 0 16 16">
+          <path d="M6.5 11.5L3 8l1.4-1.4L6.5 8.7l5.1-5.1L13 5l-6.5 6.5z" fill="currentColor"/>
         </svg>
-
-        <h3 class="text-3xl font-black mb-4">Fully Customizable</h3>
-        <p class="text-lg text-[#475569] leading-relaxed">
-          Every stroke, wave, color, and motion is yours to control — no rigid templates.
-        </p>
+        <span>Full Supabase integration — Auth, Database, Storage, Realtime, RLS</span>
       </div>
 
-      <!-- Feature Card -->
-      <div class="relative p-10 border-4 border-[#0F172A] rounded-xl bg-white shadow-[8px_8px_0_#0F172A] hover:shadow-[12px_12px_0_#3CF6C7] transition-all duration-300">
-
-        <svg class="absolute -top-6 -left-4 w-32 opacity-60 pointer-events-none"
-             viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5 30 C40 5, 80 55, 120 20 S180 40, 195 10"
-                stroke="#3C82F6" stroke-width="4" stroke-linecap="round"
-                class="animate-scribble-card" />
-        </svg>
-
-        <h3 class="text-3xl font-black mb-4">Production‑Ready</h3>
-        <p class="text-lg text-[#475569] leading-relaxed">
-          Built with Astro, Tailwind, and modern JS — fast, clean, and ready to deploy.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<style>
-  @keyframes scribble-features {
-    0% { stroke-dashoffset: 0; transform: translateY(0px); }
-    50% { stroke-dashoffset: -100; transform: translateY(-10px); }
-    100% { stroke-dashoffset: 0; transform: translateY(0px); }
-  }
-
-  @keyframes scribble-card {
-    0% { stroke-dashoffset: 0; transform: translateX(0px); }
-    50% { stroke-dashoffset: -50; transform: translateX(6px); }
-    100% { stroke-dashoffset: 0; transform: translateX(0px); }
-  }
-
-  .animate-scribble-features {
-    animation: scribble-features 7s ease-in-out infinite;
-  }
-
-  .animate-scribble-card {
-    animation: scribble-card 5s ease-in-out infinite;
-  }
-</style>
-
+      <div class="flex items-start gap-4">
+        <svg class="w-6 h-6 mt-1 text-black" viewBox="0 0 16 16">
