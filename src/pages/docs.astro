@@ -1,0 +1,115 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Documentation – Astro SaaS Launcher">
+
+<section class="py-40 bg-white">
+
+  <div class="mx-auto max-w-5xl px-6">
+
+    <!-- Heading -->
+    <h1 class="text-6xl md:text-8xl font-black tracking-tight leading-[0.9] text-[#0F172A] mb-12">
+      Documentation<br />
+      <span class="inline-block -rotate-1 px-3 bg-[#FF5F7E] text-white">
+        Build faster. Launch sooner.
+      </span>
+    </h1>
+
+    <p class="text-2xl text-[#475569] font-semibold max-w-3xl leading-snug mb-20">
+      Welcome to the Astro SaaS Launcher documentation.  
+      This guide walks you through everything you need to know to build, customise, and launch your SaaS product — without wasting weeks on boilerplate.
+    </p>
+
+    <!-- Intro Cards -->
+    <div class="grid md:grid-cols-2 gap-10 mb-32">
+
+      <a href="#" class="block border-4 border-black bg-white shadow-[10px_10px_0_0_#000] p-10 hover:bg-yellow-100 transition">
+        <h2 class="text-3xl font-black mb-4">Getting Started</h2>
+        <p class="text-xl text-[#1E293B] font-medium">
+          Install the project, configure your environment, and launch your local dev server in minutes — not hours.
+        </p>
+      </a>
+
+      <a href="#" class="block border-4 border-black bg-white shadow-[10px_10px_0_0_#000] p-10 hover:bg-yellow-100 transition">
+        <h2 class="text-3xl font-black mb-4">Supabase Integration</h2>
+        <p class="text-xl text-[#1E293B] font-medium">
+          Auth, Database, Storage, Realtime, and RLS — all wired together for you. Learn how it works under the hood.
+        </p>
+      </a>
+
+      <a href="#" class="block border-4 border-black bg-white shadow-[10px_10px_0_0_#000] p-10 hover:bg-yellow-100 transition">
+        <h2 class="text-3xl font-black mb-4">UI Components</h2>
+        <p class="text-xl text-[#1E293B] font-medium">
+          A clean, modern dashboard shell with reusable components built using Astro + Svelte.
+        </p>
+      </a>
+
+      <a href="#" class="block border-4 border-black bg-white shadow-[10px_10px_0_0_#000] p-10 hover:bg-yellow-100 transition">
+        <h2 class="text-3xl font-black mb-4">Deployment</h2>
+        <p class="text-xl text-[#1E293B] font-medium">
+          Deploy to Vercel, Netlify, or your own infrastructure with zero friction.
+        </p>
+      </a>
+
+    </div>
+
+    <!-- Sales Section -->
+    <div class="border-4 border-black bg-[#0F172A] text-white shadow-[12px_12px_0_0_#000] p-16 mb-32">
+
+      <h2 class="text-5xl font-black mb-8">Why this starter exists</h2>
+
+      <p class="text-2xl font-medium text-white/90 leading-snug mb-10 max-w-3xl">
+        Every SaaS product starts with the same foundation — authentication, database models, protected routes, billing, dashboard UI, email flows, and a production‑ready file structure.
+      </p>
+
+      <p class="text-2xl font-medium text-white/90 leading-snug mb-10 max-w-3xl">
+        None of this is the “fun part,” and none of it is what makes your product unique.  
+        But you still have to build it. Every. Single. Time.
+      </p>
+
+      <p class="text-2xl font-medium text-white/90 leading-snug max-w-3xl">
+        Astro SaaS Launcher gives you all of that — fully wired, fully functional, and ready to extend — so you can skip the boilerplate and build the thing your customers actually pay for.
+      </p>
+
+    </div>
+
+    <!-- Placeholder Docs Sections -->
+    <div class="space-y-20">
+
+      <section>
+        <h2 class="text-4xl font-black text-[#0F172A] mb-6">Installation</h2>
+        <p class="text-xl text-[#475569] font-medium max-w-3xl">
+          Installation instructions will go here.  
+          For now, know this: setup takes minutes, not hours.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-4xl font-black text-[#0F172A] mb-6">Project Structure</h2>
+        <p class="text-xl text-[#475569] font-medium max-w-3xl">
+          A clean, modern, production‑ready file structure designed for real SaaS products — not demos.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-4xl font-black text-[#0F172A] mb-6">Authentication</h2>
+        <p class="text-xl text-[#475569] font-medium max-w-3xl">
+          Supabase Auth is fully integrated with protected routes, session handling, and user state management.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-4xl font-black text-[#0F172A] mb-6">Billing</h2>
+        <p class="text-xl text-[#475569] font-medium max-w-3xl">
+          Stripe checkout is already wired in — no need to fight with webhooks or session creation.
+        </p>
+      </section>
+
+    </div>
+
+  </div>
+</section>
+
+</BaseLayout>
+
