@@ -1,4 +1,10 @@
 # Astro SaaS Launcher  
+
+<p align="center">
+  <img src="./images/astro-saas-launcher-screenshot.png" width="900" alt="Astro SaaS Launcher Screenshot">
+</p>
+
+
 A fully‑working SaaS application built with Astro, Svelte, Tailwind CSS, and Supabase.
 
 Astro SaaS Launcher is a complete, production‑ready starter designed for developers who want to launch real SaaS products without spending weeks building the same boilerplate. It includes authentication, database models, protected routes, billing, dashboard UI, and a clean, scalable architecture.

@@ -1,0 +1,13 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import DemoApp from "../components/demo/DemoApp.svelte";
+---
+
+<BaseLayout title="Demo – Astro SaaS Launcher">
+  <section class="py-40 bg-white">
+    <div class="mx-auto max-w-5xl px-6">
+      <DemoApp client:load />
+    </div>
+  </section>
+</BaseLayout>
+
